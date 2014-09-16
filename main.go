@@ -1,1 +1,0 @@
-cmd/adm/main.go
