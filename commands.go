@@ -15,6 +15,7 @@ var Commands = []cli.Command{
 	commandPush,
 	commandStatus,
 	commandInstall,
+	commandSecret,
 }
 
 var commandInit = cli.Command{
@@ -73,6 +74,14 @@ var commandInstall = cli.Command{
 	Action: doInstall,
 }
 
+var commandSecret = cli.Command{
+	Name:  "secret",
+	Usage: "",
+	Description: `
+`,
+	Action: doSecret,
+}
+
 func debug(v ...interface{}) {
 	if os.Getenv("DEBUG") != "" {
 		log.Println(v...)
@@ -104,4 +113,7 @@ func doStatus(c *cli.Context) {
 }
 
 func doInstall(c *cli.Context) {
+}
+
+func doSecret(c *cli.Context) {
 }
