@@ -20,15 +20,16 @@ var Commands = []cli.Command{
 
 var commandInit = cli.Command{
 	Name:  "init",
-	Usage: "",
+	Usage: "Initialize a dotfile manager",
 	Description: `
+	--repo specify repo name
 `,
 	Action: doInit,
 }
 
 var commandAdd = cli.Command{
 	Name:  "add",
-	Usage: "",
+	Usage: "Add dotfiles to files managed",
 	Description: `
 `,
 	Action: doAdd,
@@ -36,7 +37,7 @@ var commandAdd = cli.Command{
 
 var commandSync = cli.Command{
 	Name:  "sync",
-	Usage: "",
+	Usage: "Sync dotfiles current status to managed files",
 	Description: `
 `,
 	Action: doSync,
@@ -44,7 +45,7 @@ var commandSync = cli.Command{
 
 var commandDiscard = cli.Command{
 	Name:  "discard",
-	Usage: "",
+	Usage: "Discard dotfiles status and reset to be last saved one",
 	Description: `
 `,
 	Action: doDiscard,
@@ -52,7 +53,7 @@ var commandDiscard = cli.Command{
 
 var commandPush = cli.Command{
 	Name:  "push",
-	Usage: "",
+	Usage: "Push managed dotfiles to remote repositories",
 	Description: `
 `,
 	Action: doPush,
@@ -60,7 +61,7 @@ var commandPush = cli.Command{
 
 var commandStatus = cli.Command{
 	Name:  "status",
-	Usage: "",
+	Usage: "Show status of managed dotfiles",
 	Description: `
 `,
 	Action: doStatus,
@@ -68,7 +69,7 @@ var commandStatus = cli.Command{
 
 var commandInstall = cli.Command{
 	Name:  "install",
-	Usage: "",
+	Usage: "Install dotfiles from remote config, load from `Dotfiles.source' by default",
 	Description: `
 `,
 	Action: doInstall,
@@ -76,7 +77,7 @@ var commandInstall = cli.Command{
 
 var commandSecret = cli.Command{
 	Name:  "secret",
-	Usage: "",
+	Usage: "Register/unregister secret string values to file",
 	Description: `
 `,
 	Action: doSecret,
@@ -95,25 +96,33 @@ func assert(err error) {
 }
 
 func doInit(c *cli.Context) {
+	log.Println("Going to implement first!")
 }
 
 func doAdd(c *cli.Context) {
+	panic("Not yet implemented.")
 }
 
 func doSync(c *cli.Context) {
+	panic("Not yet implemented.")
 }
 
 func doDiscard(c *cli.Context) {
+	panic("Not yet implemented.")
 }
 
 func doPush(c *cli.Context) {
+	panic("Not yet implemented.")
 }
 
 func doStatus(c *cli.Context) {
+	panic("Not yet implemented.")
 }
 
 func doInstall(c *cli.Context) {
+	panic("Not yet implemented.")
 }
 
 func doSecret(c *cli.Context) {
+	panic("Not yet implemented.")
 }
